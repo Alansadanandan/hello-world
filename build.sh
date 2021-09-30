@@ -11,8 +11,8 @@ KERNEL_DIR=$wd
 ANYKERNEL_DIR="/home/runner/work/kernelbuild/kernelbuild/AnyKernel3"
 IMG=$out"/arch/arm64/boot/Image.gz-dtb"
 DATE="`date +%d%m%Y-%aH%M%S`"
-grp_chat_id="-503257964"
-chat_id="872750064"
+grp_chat_id=""
+chat_id=""
 token="1255724852:AAEHO-nozQbC2WFaI5WsvVht_p_WeFzTIv0"
 TC=/usr/bin/aarch64-linux-gnu-gcc
 
