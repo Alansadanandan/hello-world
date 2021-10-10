@@ -12,8 +12,8 @@ ANYKERNEL_DIR="/home/runner/work/kernelbuild/kernelbuild/AnyKernel3"
 IMG=$out"/arch/arm64/boot/Image.gz-dtb"
 DATE="`date +%d%m%Y-%aH%M%S`"
 grp_chat_id=""
-chat_id=""
-token="1255724852:AAEHO-nozQbC2WFaI5WsvVht_p_WeFzTIv0"
+chat_id="872750064"
+token="1255724852:AAHsWbIC9era4aWYs7Sod0isyip6SThE1mo"
 TC=/usr/bin/aarch64-linux-gnu-gcc
 
 function path_clang()
