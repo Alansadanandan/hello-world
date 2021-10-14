@@ -142,6 +142,9 @@ function tg_push_log()
       -F "disable_web_page_preview=true" \
       -F "parse_mode=html" \
             -F caption="🛠️ Build took $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) second(s). @shadowelite"
+   LINK=curl -F "file=@$out/build.log" 0x0.st
+  
+  curl https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$LINK
 }
 
 function tg_ziping()
