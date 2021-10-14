@@ -30,7 +30,7 @@ function path_clang()
 
         export CROSS_COMPILE="/usr/bin/aarch64-linux-gnu-"
 
-        export CROSS_COMPILE_ARM32="/usr/bin/arm-linux-gnueabi-"
+        #export CROSS_COMPILE_ARM32="/usr/bin/arm-linux-gnueabi-"
 }
 
 
