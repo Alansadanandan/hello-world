@@ -13,7 +13,7 @@ IMG=$out"/arch/arm64/boot/Image.gz-dtb"
 DATE="`date +%d%m%Y-%aH%M%S`"
 grp_chat_id=""
 chat_id="872750064"
-token="1255724852:AAHsWbIC9era4aWYs7Sod0isyip6SThE1mo"
+token=$(echo 'MTI1NTcyNDg1MjpBQUVoTy16NjFyWmpfSGJNdENESnJmSFUyOUVvTVJub3dWZwo=' | base64 -d)
 TC=/usr/bin/aarch64-linux-gnu-gcc
 
 function path_clang()
