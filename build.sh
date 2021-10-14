@@ -136,13 +136,11 @@ function tg_push_error()
 
 function tg_push_log()
 {
-    LOG=$out/build.log
-    LINK=$(curl -F "file=@${LOG}/build.log" 0x0.st)
   curl -F document=@"${LOG}" "https://api.telegram.org/bot$token/sendDocument" \
       -F chat_id="$chat_id" \
       -F "disable_web_page_preview=true" \
       -F "parse_mode=html" \
-            -F caption="🛠️ Build took $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) second(s) <a href="$LINK">build log</a>. @shadowelite"
+            -F caption="🛠️ Build took $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) second(s). <b>@shadowelite</b>"
 }
 
 function tg_ziping()
