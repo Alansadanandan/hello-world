@@ -142,7 +142,7 @@ function tg_push_log()
       -F chat_id="$chat_id" \
       -F "disable_web_page_preview=true" \
       -F "parse_mode=html" \
-            -F caption="🛠️ Build took $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) second(s) [*Link*](${LOG_LINK). @shadowelite"
+            -F caption="🛠️ Build took $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) second(s) [*Link*](${LOG_LINK}). @shadowelite"
 }
 
 function tg_ziping()
