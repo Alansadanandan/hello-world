@@ -137,7 +137,7 @@ function tg_push_error()
 function tg_push_log()
 {
     LOG=$out/build.log
-    LOG_LINK=$(curl -F file=@"${LOG}" 0x0.st)
+    LOG_LINK=$(cat ${LOG} | curl -F 'f:1=<-' ix.io)
   curl -F document=@"${LOG}" "https://api.telegram.org/bot$token/sendDocument" \
       -F chat_id="$chat_id" \
       -F "disable_web_page_preview=true" \
