@@ -98,7 +98,7 @@ function flash_zip()
     rm $ANYKERNEL_DIR/modules/lib/modules/*/build
 
     # Build a flashable zip
-    zip -r9 $ZIPNAME * -X .git README.md
+    zip -r9 $ZIPNAME * -x .git README.md
     MD5=$(md5sum ShadowElite-*.zip | cut -d' ' -f1)
     tg_sending
     tg_push
